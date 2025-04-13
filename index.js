@@ -1,3 +1,4 @@
+require('dotenv').config(); // Esto carga las variables del .env
 const express = require('express');
 const cors = require('cors');
 const routerApi = require('./routes');
@@ -37,5 +38,5 @@ app.use(errorHandler);
 
 
 app.listen(port, () => {
-  console.log('Mi port' +  port);
+  console.log('My port: ' +  port);
 });
