@@ -2,6 +2,7 @@ require('dotenv').config(); // Esto carga las variables del .env
 const express = require('express');
 const cors = require('cors');
 const routerApi = require('./routes');
+const sequelize = require('./libs/sequelize.config'); // 👈 Esto importa y ejecuta todo
 
 const { logErrors, errorHandler, boomErrorHandler } = require('./middlewares/error.handler');
 
